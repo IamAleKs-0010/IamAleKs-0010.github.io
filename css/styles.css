@@ -1,0 +1,87 @@
+* {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+}
+
+:root {
+  --text-color: hsl(232, 10%, 55%);
+}
+
+main {
+  width: 100%;
+  min-width: 320px;
+}
+
+/* - Family: [Barlow](https://fonts.google.com/specimen/Barlow)
+- Weights: 600
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700, 900 */
+
+/* FIRST PART */
+.first-part {
+  height: 350px;
+  background-image: url(../assets/images/mobile/image-header.jpg);
+  background-color: #3ebfff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -100px;
+}
+
+.first-part__title {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 60px;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: #fff;
+}
+
+/* ========================================= */
+
+/* SECOND PART */
+.second-part {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  background-image: url(../assets/images/mobile/image-transform.jpg);
+}
+
+.second-part__title {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.second-part__text {
+  width: 280px;
+  margin: 0 auto 35px auto;
+  font-size: 0.99rem;
+  line-height: 20px;
+  color: var(--text-color);
+}
+
+.second-part__container-1 {
+  width: 100%;
+  height: 230px;
+  padding: 50px 10px;
+  flex-basis: 320px;
+}
+
+.second-part__container-2 {
+  width: 100%;
+  height: 230px;
+  padding: 50px 10px;
+  flex-basis: 320px;
+}
