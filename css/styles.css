@@ -90,6 +90,7 @@ main {
 
 /* FIRST PART */
 .first-part {
+  position: relative;
   width: 100%;
   height: 350px;
   background-image: url(../assets/images/mobile/image-header.jpg);
@@ -109,6 +110,15 @@ main {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 7px;
+  color: #fff;
+}
+
+.arrow {
+  position: absolute;
+  width: 100%;
+  margin-top: 150px;
+  font-size: 3rem;
+  text-align: center;
   color: #fff;
 }
 
@@ -408,6 +418,11 @@ main {
 /* =================================================== */
 
 @media (min-width: 376px) and (max-width: 425px) {
+  .first-part {
+    background-image: url(../assets/images/desktop/image-header.jpg);
+    background-position: center;
+  }
+
   .third-part__card {
     height: 530px; /* MEDIA QUERIE PARA AJUSTAR GRAPHIC DESIGN */
   }
@@ -425,17 +440,22 @@ main {
   .first-part {
     width: 100%;
     height: 550px;
-    background-image: url(../assets/images/mobile/image-header.jpg);
+    background-image: url(../assets/images/desktop/image-header.jpg);
     background-color: var(--header-background);
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
   }
 
   .first-part__title {
-    width: 420px;
+    width: 350px;
     padding-top: 120px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 5px;
+  }
+
+  .arrow {
+    margin-top: 290px;
+    font-size: 4rem;
   }
 
   /* =================================================== */
@@ -597,8 +617,13 @@ main {
   .first-part__title {
     width: 500px;
     padding-top: 120px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 5px;
+  }
+
+  .arrow {
+    margin-top: 265px;
+    font-size: 4rem;
   }
 
   /* =================================================== */
@@ -748,6 +773,7 @@ main {
 
   /* FIRST PART */
   .first-part {
+    position: relative;
     width: 100%;
     height: 550px;
     background-image: url(../assets/images/desktop/image-header.jpg);
@@ -757,10 +783,19 @@ main {
   }
 
   .first-part__title {
-    width: 500px;
+    width: 800px;
     padding-top: 120px;
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 5px;
+  }
+
+  .arrow {
+    position: absolute;
+    width: 100%;
+    margin-top: 250px;
+    font-size: 5rem;
+    text-align: center;
+    color: #fff;
   }
 
   /* =================================================== */
