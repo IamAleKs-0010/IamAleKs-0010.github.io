@@ -507,7 +507,7 @@ main {
 
   /* THIRD PART */
   .third-part__card {
-    height: 65vmax;
+    height: 700px;
     flex-basis: 320px;
     flex-shrink: 1;
     flex-grow: 2;
