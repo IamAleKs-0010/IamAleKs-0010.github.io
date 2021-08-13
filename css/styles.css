@@ -66,9 +66,15 @@ main {
   flex-direction: column;
   justify-content: center;
   position: sticky;
-  top: 80px;
-  left: 0;
   z-index: 10;
+}
+
+.nav-menu_invisible {
+  display: none;
+}
+
+.nav-menu_visible {
+  display: block;
 }
 
 .header__nav-menu::before {
@@ -120,6 +126,7 @@ main {
   background-color: transparent;
   color: #fff;
   display: block;
+  cursor: pointer;
 }
 
 /* ========================================= */
