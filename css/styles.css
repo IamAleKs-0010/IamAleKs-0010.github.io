@@ -69,14 +69,6 @@ main {
   z-index: 10;
 }
 
-.nav-menu_invisible {
-  display: none;
-}
-
-.nav-menu_visible {
-  display: block;
-}
-
 .header__nav-menu::before {
   position: absolute;
   content: "";
