@@ -55,7 +55,7 @@ main {
 
 .header__nav-menu {
   position: fixed;
-  top: 50px;
+  top: 0;
   left: 0;
   right: 0;
   width: 85%;
@@ -67,21 +67,18 @@ main {
   justify-content: center;
   z-index: 10;
   display: none;
-  transition: all .3s;
 }
-
 
 .header__nav-menu::before {
   position: absolute;
   content: "";
-  width: 1px;
-  height: 1px;
-  top: -70px;
+  width: 25px;
+  height: 25px;
+  top: -25px;
   right: 0;
   background-color: transparent;
-  border-left: 50px solid transparent;
+  border-right: 50px solid #fff;
   border-top: 50px solid transparent;
-  border-bottom: 50px solid #fff;
 }
 
 .header__nav-item {
@@ -126,6 +123,21 @@ main {
 .nav-menu_visible{
   display: flex;
   top: 100px;
+  transition: top .3s;
+  animation-name: navbarDash;
+  animation-duration: .3s;
+  animation-direction: alternate;
+}
+
+@keyframes navbarDash{
+  0%{
+    top: 75px;
+    display:none;
+  }
+  100%{
+    top: 100px;
+    display:flex;
+  }
 }
 
 /* ========================================= */
@@ -436,6 +448,11 @@ main {
   color: var(--footer-color);
 }
 
+.link:hover{
+  color: #fff;
+  transition: color .2s;
+}
+
 .footer__social-media {
   color: var(--footer-color);
   display: flex;
@@ -453,6 +470,12 @@ main {
 
 .icon {
   margin: 15px 15px 65px 15px;
+  font-size: 1.5rem;
+  transition: color .2s;
+}
+
+.icon:hover{
+  color: #fff;
 }
 
 /* =================================================== */
@@ -711,6 +734,12 @@ main {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
   }
+  
+  .link-contact:hover {
+    color: #fff;
+    background-color: #6fcfff;
+    transition: background-color .2s;
+  }
 
   .header__btn-toggle {
     position: absolute;
@@ -950,6 +979,12 @@ main {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+  }
+
+  .link-contact:hover {
+    color: #fff;
+    background-color: #6fcfff;
+    transition: background-color .2s;
   }
 
   .header__btn-toggle {
