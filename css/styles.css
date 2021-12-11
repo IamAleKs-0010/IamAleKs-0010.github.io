@@ -41,16 +41,23 @@ main {
   background-color: var(--header-background);
 }
 
-.brand {
+.header__brand {
   width: 150px;
   padding: 35px 25px;
 }
 
 .header__nav {
+  max-width: 992px;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .header__nav-menu {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
@@ -58,10 +65,11 @@ main {
   background-color: #fff;
   flex-direction: column;
   justify-content: center;
-  position: sticky;
   z-index: 10;
-  display: flex;
+  display: none;
+  transition: all .3s;
 }
+
 
 .header__nav-menu::before {
   position: absolute;
@@ -104,15 +112,20 @@ main {
   -o-border-radius: 50px;
 }
 
-.header__toggle {
-  position: absolute;
-  right: 20px;
-  top: 30px;
+.header__btn-toggle {
+  position: block;
+  padding: 6%;
   font-size: 1.6rem;
   background-color: transparent;
   color: #fff;
   display: block;
   cursor: pointer;
+}
+
+
+.nav-menu_visible{
+  display: flex;
+  top: 100px;
 }
 
 /* ========================================= */
@@ -453,11 +466,11 @@ main {
   }
 
   .third-part__card {
-    height: 530px; /* MEDIA QUERIE PARA AJUSTAR GRAPHIC DESIGN */
+    height: 530px; 
   }
 
   .third-part__title {
-    margin: 370px 0 25px 0; /* MEDIA QUERIE PARA AJUSTAR PHOTOGRAPHY */
+    margin: 370px 0 25px 0; 
   }
 }
 
@@ -638,13 +651,12 @@ main {
     height: 95px;
     padding-right: 15px;
     background-color: var(--header-background);
-    display: flex;
     justify-content: space-between;
   }
 
-  .brand {
+  .header__brand {
     width: 180px;
-    padding: 35px 25px;
+    padding: 50px 25px;
   }
 
   .header__nav {
@@ -700,7 +712,7 @@ main {
     -o-border-radius: 50px;
   }
 
-  .header__toggle {
+  .header__btn-toggle {
     position: absolute;
     display: none;
   }
@@ -867,25 +879,24 @@ main {
 }
 
 @media (min-width: 769px) and (max-width: 2560px) {
+
   main {
     width: 100%;
     max-width: 100%;
   }
 
   /* HEADER */
-  /* HEADER */
   .header {
     width: 100%;
     height: 95px;
     padding-right: 15px;
     background-color: var(--header-background);
-    display: flex;
     justify-content: space-between;
   }
 
-  .brand {
+  .header__brand {
     width: 180px;
-    padding: 35px 25px;
+    padding: 50px 25px;
   }
 
   .header__nav {
@@ -941,7 +952,7 @@ main {
     -o-border-radius: 50px;
   }
 
-  .header__toggle {
+  .header__btn-toggle {
     position: absolute;
     display: none;
   }
