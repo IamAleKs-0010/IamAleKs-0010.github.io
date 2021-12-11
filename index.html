@@ -20,10 +20,10 @@
                 <a href="#"><img src="assets/images/logo.svg" alt="sunnyside" class="header__brand"></a>
                 <button id="btn-toggle" class="header__btn-toggle" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
                 <ul id="nav-menu" class="header__nav-menu">
-                    <li class="header__nav-item" tabindex="1"><a href="#" class="header-link">About</a></li>
-                    <li class="header__nav-item" tabindex="2"><a href="#" class="header-link">Services</a></li>
-                    <li class="header__nav-item" tabindex="3"><a href="#" class="header-link">Projects</a></li>
-                    <li class="header__nav-item" tabindex="4"><a href="#" class="header-link link-contact">Contact</a></li>
+                    <li class="header__nav-item" aria-label="About"><a href="#" class="header-link">About</a></li>
+                    <li class="header__nav-item" aria-label="Services"><a href="#" class="header-link">Services</a></li>
+                    <li class="header__nav-item" aria-label="Projects"><a href="#" class="header-link">Projects</a></li>
+                    <li class="header__nav-item" aria-label="Contact"><a href="#" class="header-link link-contact">Contact</a></li>
                 </ul>
              </nav> 
         </header> 
@@ -38,7 +38,9 @@
                 <div class="second-part-content-div container-1">
                     <h2 class="second-part__title">Transform your brand</h2>
                     <p class="second-part__text">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-                    <button class="second-part__link link--container-1" aria-label="Learn More about Sunnyside Agency"><a href="#">Learn More</a></button>
+                    <button class="second-part__link link--container-1">
+                        <a href="#" aria-label="Learn More about Sunnyside">Learn More</a>
+                    </button>
                 </div>
 
                 <!-- PARTE SUPERIOR DERECHA -->
@@ -50,7 +52,7 @@
                     <h2 class="second-part__title">Stand out to the right audience</h2> 
                     <p class="second-part__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
                     <button class="second-part__link link--container-2">
-                        <a href="#">Learn More</a>
+                        <a href="#" aria-label="Learn More about Sunnyside">Learn More</a>
                     </button>    
                 </div
                 
@@ -100,16 +102,16 @@
         <footer class="footer">
             <nav class="footer__nav">
                 <ul>
-                    <li class="footer__link"><a href="#" class="link">About</a></li>
-                    <li class="footer__link"><a href="#" class="link"ç>Servicios</a></li>
-                    <li class="footer__link"><a href="#" class="link">Projects</a></li>
+                    <li class="footer__link" aria-label="About"><a href="#" class="link">About</a></li>
+                    <li class="footer__link" aria-label="Services"><a href="#" class="link"ç>Services</a></li>
+                    <li class="footer__link" aria-label="Projects"><a href="#" class="link">Projects</a></li>
                 </ul>
             </nav>
             <div class="footer__social-media">
-                <a href="#"><i class="fab fa-facebook-square icon"></i></a>
-                <a href="#"><i class="fab fa-instagram icon"></i>
-                <a href="#"><i class="fab fa-twitter icon"></i></a>
-                <a href="#"><i class="fab fa-pinterest icon"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-square icon"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram icon"></i>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter icon"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest icon"></i></a>
             </div>
         </footer>
     </div>
