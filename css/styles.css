@@ -76,7 +76,6 @@ main {
   height: 25px;
   top: -25px;
   right: 0;
-  background-color: transparent;
   border-right: 50px solid #fff;
   border-top: 50px solid transparent;
 }
@@ -240,14 +239,20 @@ main {
 
 .second-part__link {
   position: relative;
+  font-size: .85rem;
   font-family: "Fraunces", serif;
   background-color: transparent;
-}
-
-.second-part__link a:link {
-  color: var(--client-title);
   text-transform: uppercase;
 }
+
+.second-part__link:link {
+  color: var(--client-title);
+}
+
+.second-part__link:visited {
+  color: var(--client-title);
+}
+
 
 .second-part__link::after {
   content: "";
@@ -255,7 +260,7 @@ main {
   left: -2px;
   top: 11px;
   width: 100px;
-  height: 5px;
+  height: 6px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -703,7 +708,7 @@ main {
   }
 
   .header__nav-menu::before {
-    border-bottom: 50px solid transparent;
+    border-right: 50px solid transparent;
   }
 
   .header__nav-item {
@@ -949,7 +954,7 @@ main {
   }
 
   .header__nav-menu::before {
-    border-bottom: 50px solid transparent;
+    border-right: 50px solid transparent;
   }
 
   .header__nav-item {
